@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-Commerce Example</title>
+    <style>
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px;
+            text-align: center;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #28a745;
+            color: #fff;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="product-container"></div>
+
+    <script>
+        // Function to create a product card
+        function createProductCard(imageUrl, title, description, price) {
+            // Create product container div
+            const productDiv = document.createElement('div');
+            productDiv.className = 'product';
+
+            // Create and append the image
+            const img = document.createElement('img');
+            img.src = imageUrl;
+            img.alt = title;
+            productDiv.appendChild(img);
+
+            // Create and append the title
+            const h2 = document.createElement('h2');
+            h2.textContent = title;
+            productDiv.appendChild(h2);
+
+            // Create and append the description
+            const p = document.createElement('p');
+            p.textContent = description;
+            productDiv.appendChild(p);
+
+            // Create and append the price
+            const priceElem = document.createElement('p');
+            priceElem.textContent = `$${price.toFixed(2)}`;
+            productDiv.appendChild(priceElem);
+
+            // Create and append the button
+            const button = document.createElement('button');
+            button.textContent = 'Add to Cart';
+            button.onclick = function() {
+                alert(`${title} added to cart!`);
+            };
+            productDiv.appendChild(button);
+
+            // Return the complete product card
+            return productDiv;
+        }
+
+        // Example product data
+        const productData = {
+            imageUrl: 'https://via.placeholder.com/300',
+            title: 'Sample Product',
+            description: 'This is a description of the sample product.',
+            price: 19.99
+        };
+
+        // Add the product card to the page
+        const container = document.getElementById('product-container');
+        const productCard = createProductCard(
+            productData.imageUrl,
+            productData.title,
+            productData.description,
+            productData.price
+        );
+        container.appendChild(productCard);
+    </script>
+
+</body>
+</html>
