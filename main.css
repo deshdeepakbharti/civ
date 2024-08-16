@@ -1,0 +1,223 @@
+
+.fa:hover {
+    opacity: 1;
+}
+body{
+    font-family: "Times New Roman", Times, serif;
+     font-weight: bold;
+}
+
+
+#topsection{
+  background: #f0f1f3; 
+    height: 100px; 
+    color:
+#054571;
+    
+}
+#leftside{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#leftsidebtn .btn{
+     background: #054571; 
+    color: white;
+}
+#best3ans{
+    
+    //background: #e9b56c; 
+    
+}
+
+.fa-telegram {
+  background: #3B5998;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin:  2px 2px;
+  border-radius: 50%;
+     margin-top:0px;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin:  2px 2px;
+  border-radius: 50%;
+ margin-top: 0px;
+}
+.fa-instagram {
+  background: linear-gradient(116deg, #f9ce34, #ee2a7b, #6228d7);
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin:  2px 2px;
+  border-radius: 50%;
+     margin-top: 0px;
+}
+
+
+#pdf1{
+   background: #f6e4c9; 
+    height: 200px;
+    
+}
+
+#pdf4 h2{
+   text-align: center;
+    
+}
+#pdf4 .abcd{
+  margin-left: 150px;
+    
+}
+
+#pdf1 #icons{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#pdf i{
+  margin-top: 30px;
+   
+}
+
+#pdf span{
+    padding-left: 12px;
+   
+}
+
+#uploadanswers{
+    background: #e9b56c; 
+}
+.card{
+     background: #054571; 
+}
+.card .btn{
+   background: #e9b56c;
+}
+.features{
+    color: #e9b56c;
+}
+.card .card-header{
+     color: #e9b56c;
+}
+
+#pdf2{
+   background: #e9b56c; 
+    height: 10px;
+}
+.fa fa-cloud-upload{
+    background: #054571;
+}
+
+#instruction{
+    background: #f6e4c9; 
+    height: 150px;
+    color: #054571;
+}
+#pdf1 {
+     color: #054571;
+}
+#instruction .fa{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 40px;
+}
+#instruction p{
+    margin-left: 20px;
+}
+#footer{
+    background: #054571;  
+     height: 600px;
+}
+#footer h4{
+    margin-top: 20px;
+    color: #e9b56c; 
+}
+#footer p{
+  color: white;
+}
+
+.form-group{
+    color: #e9b56c;
+}
+#submitbtn{
+    background:  #e9b56c; 
+}
+
+.card{
+     transition: box-shadow .6s;
+  width: 300px;
+  
+  
+  border-radius:10px;
+  border: 1px solid #ccc;
+  background: ;
+  float: left;
+}
+.card:hover {
+  box-shadow: 0 0 11px rgba(100,100,100,.6); 
+}
+ #carousel{
+        height: 50%;
+    }
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: lightgreen;
+      
+    }
+     .navbar-nav > li > a{
+        text-align: center;
+    }
+row > row > leftsidebtn > btn{
+        color: aqua;
+    }
+    #leftsidebtn{
+    display: flex}
+   
+   #leftsidebtn .btn{
+        background-color:#054571; 
+    }
+    
+   
+   
+#best3ans  h5{
+              font-size: 20px;
+            }
+    #pdf1{
+        height: 350px;
+        text-align: center;
+    }
+    #pdf1 .d-flex .vr{
+        height:350px;
+    }
+    .card #card1{
+    padding-top: 20px;
+    }
+    
+   
+#instruction .fa{
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 0px;
+}
+    #footer{
+    text-align: center;
+    background: #054571;  
+     height: 1000px;
+}
+   
+ }
+
